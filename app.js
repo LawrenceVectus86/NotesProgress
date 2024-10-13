@@ -34,6 +34,15 @@ function addNoteToDOM(noteText, progressValue, isCompleted, index) {
     progressLabel.classList.add('progress-label');
     progressLabel.textContent = progressValue + '%';
     
+    // Menambahkan CSS langsung ke elemen
+    progressLabel.style.position = 'absolute';
+    progressLabel.style.right = '11rem';
+    progressLabel.style.top = '50%';
+    progressLabel.style.transform = 'translateY(-50%)';
+    progressLabel.style.fontSize = '12px';
+    progressLabel.style.color = '#fff';
+    progressLabel.style.fontWeight = '800';
+    
     progressBar.appendChild(progress);
     noteDiv.appendChild(progressBar);
     noteDiv.appendChild(progressLabel);
