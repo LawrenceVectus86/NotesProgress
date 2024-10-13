@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes with Progress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Notes with Progress Tracker</h1>
+        
+        <label for="noteInput">Add a Note:</label>
+        <textarea id="noteInput" rows="4" placeholder="Type your note here..."></textarea>
+        
+        <label for="progressInput">Progress (in %):</label>
+        <input type="number" id="progressInput" placeholder="Enter progress (0-100)">
+        
+        <button id="addNote">Add Note</button>
+        
+        <div id="notesList"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

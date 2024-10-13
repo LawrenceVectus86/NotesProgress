@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    color: #555;
+}
+
+textarea, input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.note {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #28a745;
+    width: 0%;
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+
+.progress-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+}
+
+.note {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 10px;
+    flex-grow: 1;
+}
+
+.progress {
+    height: 100%;
+    background-color: #28a745;
+    width: 0%;
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+
+.progress-label {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.note-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+button.delete, button.edit, input[type="checkbox"] {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.edit {
+    background-color: orange;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.note.completed p {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
